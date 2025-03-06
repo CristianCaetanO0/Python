@@ -1,0 +1,71 @@
+#Tabuada do 1 ao 10
+num = int(input('Digite o numero para saber a tabuada completa:'))
+print('---------------')
+print('{} x {}= {}'.format(num,1, num*1))
+print('{} x {} = {}' .format(num, 2, num*2))
+print('{} x {} = {}' .format(num, 3, num*3))
+print('{} x {} = {}' .format(num, 4, num*4))
+print('{} x {} = {}' .format(num, 5, num*5))
+print('{} x {} = {}' .format(num, 6, num*6))
+print('{} x {} = {}' .format(num, 7, num*7))
+print('{} x {} = {}' .format(num, 8, num*8))
+print('{} x {} = {}' .format(num, 9, num*9))
+print('{} x {} = {}' .format(num, 10, num*10))
+====================================================================
+
+#Sucessor e antecessor
+a = int (input('Digite um valor: '))
+suc = a+1
+ant = a-1
+print('o sucessor do numero digitado é {}, antecessor {}'.format(suc, ant))
+=============================================================================================
+
+
+#Calculo area de pintura
+larg = float(input('Qual é a largura da parede?'))
+alt = float(input('Qual é a altura?'))
+area = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua area é de {}' .format(larg, alt, area))
+tinta = area / 2
+print('Para pintar essa area será necessário {}l de tinta!' .format(tinta))
+==================================================================================================
+
+#Soma dos catetos e o valor da hipotenusa
+import math
+cateto_op = float (input('Informe o valor do cateto oposto:'))
+cateto_ad = float (input('Informe o cateto adjacente agora:'))
+soma_tudo = (cateto_op ** 2) + (cateto_ad ** 2)
+print('A soma dos catetos é {} e a hipotenusa fica {:.2f}' .format(soma_tudo, math.sqrt(soma_tudo)))
+=====================================================================================================
+
+#Primeiro e último nome de uma pessoa com funções de string
+ler_nomecomp = str (input('Informe o seu nome completo:')).strip()
+nome = ler_nomecomp.split()
+print('Prazar em te conhecer {}!' .format(ler_nomecomp))
+print('Seu primeiro nome é {}' .format(nome[0]))
+print('Seu último nome é {}' .format(nome[len(nome)-1]))
+=====================================================================================================
+
+#media de nota com if e else
+nota1 = float (input('Digite a sua primeira nota:'))
+nota2 = float (input('Digite a sua segunda nota:'))
+media = (nota1 + nota2) / 2
+if media >= 6:{
+   print('Parabéns!, Voce foi aprovado')}
+else: print('Voce foi reprovado')
+=====================================================================================================
+
+#Descobrindo se o número digitado é ímpar ou par
+numero = int (input('Digite um numero:'))
+if num % 2 == 0: print('Esse numero é par')
+else: print('Esse numéro é impar')
+======================================================================================================
+
+#Calculando aumento de sálario de um funcionário
+salario = float (input('Qual é o seu salário:'))
+if salario > 1250: 
+    aumento = salario + (salario * 10 / 100)
+else: 
+    aumento = salario + (salario * 15 / 100)
+print('Quem ganha R${} passará a ganhar R${}' .format(salario, aumento))
+======================================================================================================
