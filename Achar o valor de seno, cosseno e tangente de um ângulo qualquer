@@ -1,0 +1,6 @@
+import math
+angulo = float (input('Qual é o valor do angulo:'))
+valor_seno = math.sin(math.radians(angulo))
+valor_cosseno = math.cos(math.radians(angulo))
+valor_tangente = math.tan(math.radians(angulo))
+print('O valor do seno é {:.2f} e cosseno {:.2f} sendo a tangente {:.2f}' .format(valor_seno, valor_cosseno, valor_tangente))
