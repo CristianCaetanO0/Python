@@ -1,0 +1,11 @@
+import random
+print('=================')
+print('Sorteio de número')
+print('=================')
+num = int (input('Pense em um número entre 0 e 5:'))
+sorteio = [0, 1, 2, 3,4 ,5]
+escolhido = random.choice(sorteio)
+print('PROCESSANDO....')
+if num == 5: print('Voce acertou o número' .format(escolhido)) 
+else: print('Voce errou' .format(escolhido))'''
+ 
